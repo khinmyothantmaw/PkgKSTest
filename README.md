@@ -1,14 +1,14 @@
 # Comparison of Multiple Numeric Samples Using KS Test
 
-This package provides functions to perform **pairwise two-sample Kolmogorov–Smirnov (KS) tests** for multiple numeric datasets in R, with **S3 object-oriented methods** (`print`, `summary`, `plot`).
+This package provides functions to perform pairwise two-sample Kolmogorov–Smirnov (KS) tests for multiple numeric datasets in R, with S3 object-oriented methods (`print`, `summary`, `plot`).
 
 ## Features
 
-- Compare **2–10 numeric datasets**.
-- Each dataset must have **at least 10 observations** and **no NA values**.
-- Compute **pairwise D-statistics and p-values**.
-- Optionally include **base R `ks.test()` results**.
-- Visualize datasets via **ECDF plots**, with optional annotation of maximum D-statistic.
+- Compare 2–10 numeric datasets.
+- Each dataset must have at least 10 observations and no NA values.
+- Compute pairwise D-statistics and p-values.
+- Optionally include base R `ks.test()` results.
+- Visualize datasets via ECDF plots, with optional annotation of maximum D-statistic.
 - Fully documented with examples.
 
 
@@ -64,7 +64,6 @@ summary(res)
 
 # Summary including base R ks.test results
 summary(res, base_ks = TRUE)
-
 ```
 
 ### Interpretation
@@ -84,13 +83,7 @@ plot(res)
 
 # Plot ECDFs and annotate maximum D-statistic for each pair
 plot(res, show_pairwise_D = TRUE)
-
 ```
-
-## Notes
-
-- Maximum 10 datasets allowed per run
-- Each dataset must contain at least 10 numeric observations.
 
 ## References
 

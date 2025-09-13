@@ -86,3 +86,13 @@ plot(res)
 plot(res, show_pairwise_D = TRUE)
 
 ```
+
+## Notes
+
+- Maximum 10 datasets allowed per run
+- Each dataset must contain at least 10 numeric observations.
+
+## References
+
+- [Kolmogorov–Smirnov test](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)
+- stats::ks.test in base R

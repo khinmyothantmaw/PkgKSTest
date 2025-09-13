@@ -1,8 +1,3 @@
----
-title: "Pairwise Two-sample Kolmogorov–Smirnov Test"
-output: html_document
----
-
 # Pairwise Two-sample Kolmogorov–Smirnov Test (R Package)
 
 This package provides functions to perform **pairwise two-sample Kolmogorov–Smirnov (KS) tests** for multiple numeric datasets in R, with **S3 object-oriented methods** (`print`, `summary`, `plot`).
@@ -40,7 +35,7 @@ document()
 
 ## Usage Examples
 
-# 1. Create Example Data
+### 1. Create Example Data
 
 ```{r}
 set.seed(1)
@@ -50,9 +45,47 @@ c <- rnorm(100, 1)
 
 datasets <- list(A = a, B = b, C = c)
 ```
-# 2. Run KS Test
+
+### 2. Run KS Test
 
 ```{r}
 res <- ks_test(datasets)
 res
+```
+
+### 3. Print Results
+
+```{r}
+print(res)
+```
+
+### 4. Summary
+
+```{r}
+# Summary of KS test result
+summary(res)
+
+# Summary including base R ks.test results
+summary(res, base_ks = TRUE)
+
+```
+
+### Interpretation
+
+- **Reject null hypothesis** if p-value < 0.05  
+  > The two samples are likely drawn from different distributions.
+
+- **Fail to reject null hypothesis** if p-value ≥ 0.05  
+  > The two samples are likely drawn from the same distribution.
+
+
+### 5. Plot ECDFs
+
+```{r}
+# Plot ECDFs
+plot(res)
+
+# Plot ECDFs and annotate maximum D-statistic for each pair
+plot(res, show_pairwise_D = TRUE)
+
 ```

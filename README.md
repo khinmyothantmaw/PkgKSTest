@@ -2,8 +2,6 @@
 
 This package provides functions to perform **pairwise two-sample Kolmogorov–Smirnov (KS) tests** for multiple numeric datasets in R, with **S3 object-oriented methods** (`print`, `summary`, `plot`).
 
----
-
 ## Features
 
 - Compare **2–10 numeric datasets**.
@@ -13,7 +11,6 @@ This package provides functions to perform **pairwise two-sample Kolmogorov–Sm
 - Visualize datasets via **ECDF plots**, with optional annotation of maximum D-statistic.
 - Fully documented with examples.
 
----
 
 ## Installation
 ```{r installation, eval=FALSE}

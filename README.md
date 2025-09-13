@@ -1,4 +1,4 @@
-# Pairwise Two-sample Kolmogorov–Smirnov Test (R Package)
+# Comparison of Multiple Numeric Samples Using KS Test
 
 This package provides functions to perform **pairwise two-sample Kolmogorov–Smirnov (KS) tests** for multiple numeric datasets in R, with **S3 object-oriented methods** (`print`, `summary`, `plot`).
 
@@ -70,10 +70,10 @@ summary(res, base_ks = TRUE)
 ### Interpretation
 
 - **Reject null hypothesis** if p-value < 0.05  
-  > The two samples are likely drawn from different distributions.
+  > The two samples come from different distributions.
 
 - **Fail to reject null hypothesis** if p-value ≥ 0.05  
-  > The two samples are likely drawn from the same distribution.
+  > The two samples come from the same distribution.
 
 
 ### 5. Plot ECDFs

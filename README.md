@@ -11,6 +11,8 @@ This package provides functions to perform pairwise two-sample Kolmogorov–Smir
 - Visualize datasets via ECDF plots, with optional annotation of maximum D-statistic.
 - Fully documented with examples.
 
+**Note**: For better and clearer visualization in plots, using a maximum of 5 datasets is recommended.
+
 
 ## Installation
 ```{r installation, eval=FALSE}
@@ -84,6 +86,8 @@ plot(res)
 # Plot ECDFs and annotate maximum D-statistic for each pair
 plot(res, show_pairwise_D = TRUE)
 ```
+
+See [example.R](./example.R) for usage demonstrations.
 
 ## References
 
